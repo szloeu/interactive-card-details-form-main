@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header></header>
+  <nav></nav>
+  <main>
+    <div id="div-id-main-left">
+
+      <div id="div-id-card-front">
+        <p id="p-id-card-number">0000 0000 0000 0000</p>
+        <div id="div-id-card-front-inner">
+          <p id="p-id-cardholder-name">Jane Appleseed</p>
+          <div id="div-id-exp-date">
+            <span id="span-id-exp-date-month">00</span><span>/</span><span id="span-id-exp-date-year">00</span>
+          </div>
+        </div>
+      </div>
+      <div id="div-id-card-back">
+        <p id="p-id-card-cvc">000</p>
+      </div>
+    </div>
+
+    <div id="div-id-main-right">
+
+      <div id="div-id-card-data">
+        <p class="p-class-card-text">CARDHOLDER NAME</p>
+        <input type="text" id="input-id-cardholder-name" class="input-class" name="cardholder-name" placeholder="e.g. Jane Appleseed" maxlength="30">
+        <p id="p-id-cardholder-name-wrong" class="p-class-wrong">Cardholder name cannot be empty</p>
+        <p class="p-class-card-text">CARD NUMBER</p>
+        <input type="text" id="input-id-card-number" class="input-class" name="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <p id="p-id-card-number-wrong" class="p-class-wrong">The card number must consist of 16 digits</p>
+        <div id="div-id-card-data-wrap">
+          <div id="div-id-exp-date-input">
+            <p class="p-class-card-text">EXP. DATE (MM/YY)</p>
+            <div id="div-id-exp-date-input-inner">
+              <input type="text" id="input-id-exp-date-month" class="input-class" name="exp-date-month" placeholder="MM" maxlength="2" pattern="[0-9]{2}">
+              <input type="text" id="input-id-exp-date-year" class="input-class" name="exp-date-year" placeholder="YY" maxlength="2" pattern="[0-9]{2}">
+            </div>
+            <p id="p-id-exp-date-wrong" class="p-class-wrong">Can't be blank and must consist of 2 digits</p>
+          </div>
+          <div id="div-id-card-cvc-input">
+            <p class="p-class-card-text">CVC</p>
+            <input type="text" id="input-id-cvc" class="input-class" name="cvc" placeholder="e.g. 123" maxlength="3">
+            <p id="p-id-cvc-wrong" class="p-class-wrong">Can't be blank and must consist of 3 digits</p>
+          </div>
+        </div>
+        <div id="div-id-confirm" class="div-class-confirm-continue">
+          <p id="p-id-confirm">Confirm</p>
+        </div>
+      </div>
+
+      <div id="div-id-thankyou">
+        <img src="./images/icon-complete.svg" alt="icon-complete">
+        <p id="p-id-thankyou">Thank you!</p>
+        <p id="p-id-we">We've added your card details</p>
+        <div id="div-id-continue" class="div-class-confirm-continue">
+          <p id="p-id-continue">Continue</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  
+</body>
+<script src="javascript.js"></script>
+</html>
